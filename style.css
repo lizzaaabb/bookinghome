@@ -13,6 +13,7 @@ body{
     --secondary-color: #D3D3D3;
     --background-color: #000000;
     --heading-size: 1.5rem;
+    --span-color: #d8d4a6;
 }
 .main-page{
     background-image: url(pics/backimg.jpg);
@@ -129,9 +130,61 @@ body{
     color: var(--secondary-color);
     font-size: 0.9rem;
 }
+.section-two{
+    background-color: black; /* Base color for the section */
+    background-image: 
+        url(pics/noise.svg); /* Your SVG noise texture */
+    background-size: cover; /* Adjust as needed */
+    background-blend-mode:luminosity; /* Blend the SVG with the color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 45px;
+    padding-bottom: 45px;
+    border-bottom:0.5px solid #d3d3d38f ;
+    gap: 35px;
 
-
-
+}
+.activityimg{
+    height: 34px;
+}
+.activity-span{
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+.activitiesp span{
+    color: var(--span-color);
+    font-size: 0.9rem;
+    
+}
+.activitiesp{
+    text-align: center;
+    margin-top: 10px;
+    width: 747px;
+}
+.activities1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 65px;
+}
+.activities2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 65px;
+}
+.activity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 110px;
+}
 
 
 @media (max-width: 430px) {
@@ -194,6 +247,46 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
+    .activities1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 15px;
+    }
+    .activities2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 15px;
+    }
+    .activitiesp{
+        text-align: center;
+        margin-top: 10px;
+        width: 94%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .activityimg{
+        height: 34px;
+    }
+    .activity-span{
+        color: var(--secondary-color);
+        font-size: 0.8rem;
+    }
+    .activitiesp span{
+        color: var(--span-color);
+        font-size: 0.85rem;
+        margin-top: 18px;
+    }
+       
     
     
 
