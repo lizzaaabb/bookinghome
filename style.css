@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
+}
+body{
+    background-color: #000000;
 }
 :root {
     --primary-color: #fff;
@@ -103,6 +106,30 @@
 }
 
 
+.section-one {
+    background-color: black; /* Base color for the section */
+    background-image: 
+        url(pics/noise.svg); /* Your SVG noise texture */
+    background-size: cover; /* Adjust as needed */
+    background-blend-mode:luminosity; /* Blend the SVG with the color */
+    border-top: 0.5px solid #d3d3d38f;
+    border-bottom:0.5px solid #d3d3d38f ;
+}
+.feature-text{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.feature{
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
 
 
 
@@ -159,6 +186,13 @@
     }
     .primarya{
         font-size: 0.8rem;
+    }
+    .feature-text{
+        flex-wrap: wrap;
+        gap: 25px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     
