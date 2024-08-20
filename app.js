@@ -67,3 +67,27 @@ function nextSlide(){
     showSlide(slideIndex);
 
 }
+
+
+emailjs.init("yS2bsPWQQnpxgtMBL"); // Initialize EmailJS with your user ID
+
+function sendEmail(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    emailjs.send("service_9kz5hgn", "template_u5wl2io", {
+        message: document.querySelector('input[name="email"]').value // Use the email input as the message
+    }).then(function() {
+        console.log("Email sent successfully");
+    }).catch(function(error) {
+        console.error("Failed to send email", error);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('email-form');
+    if (form) {
+        form.addEventListener('submit', sendEmail);
+    } else {
+        console.error('Form element not found');
+    }
+});
